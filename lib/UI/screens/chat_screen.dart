@@ -22,13 +22,11 @@ class _ChatScreenState extends State<ChatScreen> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Flexible(
-          child: Hero(
-            tag: 'logo',
-            child: Container(
-              height: 70,
-              child: Image.asset('images/logo.png'),
-            ),
+        title: Hero(
+          tag: 'logo',
+          child: Container(
+            height: 70,
+            child: Image.asset('images/logo.png'),
           ),
         ),
         actions: <Widget>[
